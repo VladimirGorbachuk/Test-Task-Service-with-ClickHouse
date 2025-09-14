@@ -16,6 +16,6 @@ dependencies = [
 
 
 [project.scripts]
-run-first = "first.main:run_app"
+run-first = "pool_di_api.main:run_app"
 
 # to run set env var DATABASE_URL

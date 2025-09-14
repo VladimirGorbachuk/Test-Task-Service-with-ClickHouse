@@ -3,7 +3,7 @@ from collections.abc import Generator
 import asyncpg
 from fastapi import Depends, FastAPI
 
-from first.interfaces import ConnectionPoolProtocol, ConnectionProtocol
+from pool_di_api.interfaces import ConnectionPoolProtocol, ConnectionProtocol
 
 
 

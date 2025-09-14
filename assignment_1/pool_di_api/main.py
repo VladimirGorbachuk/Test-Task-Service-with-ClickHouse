@@ -6,9 +6,9 @@ import asyncpg
 import uvicorn
 from fastapi import APIRouter, FastAPI, Depends
 
-from first.di import set_dependency_injection
-from first.interfaces import ConnectionProtocol
-from first.psql_pool import create_connection_pool
+from pool_di_api.di import set_dependency_injection
+from pool_di_api.interfaces import ConnectionProtocol
+from pool_di_api.psql_pool import create_connection_pool
 
 
 router = APIRouter(prefix="/api")
