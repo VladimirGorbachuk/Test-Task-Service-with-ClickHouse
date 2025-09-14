@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "test-assignment-api"
+version = "0.1.0"
+description = "small test-assignment pkg: PostgreSQL backend using asyncpg"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "asyncpg==0.30.0",
+    "fastapi==0.115.6",
+    "uvicorn==0.34.0",
+]
+
+
+[project.scripts]
+run-first = "first.main:run_app"
+
+# to run set env var DATABASE_URL
