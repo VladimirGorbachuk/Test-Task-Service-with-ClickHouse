@@ -3,3 +3,5 @@ private_assignment.md
 venv
 *.egg-info
 *.pyc
+sample_2.py
+sample_3.py

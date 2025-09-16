@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "test-assignment-cli"
+version = "0.1.0"
+description = "small test-assignment pkg: repo collector"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "pydantic==2.11.7",
+    "aiohttp==3.11.11",
+]
+
+
+[project.scripts]
+scrape = "github_parsing.main:main"
+
+#did not check functionality yet
